@@ -24,4 +24,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/p7compoffloading:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/p7compoffloading:latest
