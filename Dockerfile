@@ -6,7 +6,7 @@ FROM arm64v8/python:3.12.0a1-slim-buster
 WORKDIR /app
 
 #Copy Requirements
-COPY requirements.txt requirements.txt
+COPY . .
 
 #Install Packages
 RUN pip3 install -r requirements.txt
