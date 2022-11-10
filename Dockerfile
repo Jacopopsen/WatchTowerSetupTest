@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1
 
-FROM arm64v8/python:3.12.0a1-slim-buster
+FROM alpine:3.16
+RUN apk add curl
 
 #Set Relative Working Directory
 WORKDIR /app
