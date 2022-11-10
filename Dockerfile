@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM arm32v7/node 
+FROM arm64v8/python:3.12.0a1-slim-buster
 
 #Set Relative Working Directory
 WORKDIR /app
