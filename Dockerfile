@@ -12,7 +12,8 @@ WORKDIR /app
 COPY . .
 
 #Install Packages
-RUN pip3 install -r requirements.txt
+RUN python -m pip install --upgrade pip
+RUN pip install -r requirements.txt
 
 #Copy all files from current direcory to image
 COPY . .
