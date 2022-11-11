@@ -53,5 +53,5 @@ jobs:
           context: .
           platforms: linux/arm/v7
           push: ${{ github.event_name != 'pull_request' }}
-          tags: workrs:main
+          tags: :main
           labels: ${{ steps.workrs.outputs.labels }}
