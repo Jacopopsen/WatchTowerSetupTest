@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM alpine:3.16
+FROM python:3.8-slim-buster
 RUN apk add curl
 ARG TARGETOS
 ARG TARGETARCH
