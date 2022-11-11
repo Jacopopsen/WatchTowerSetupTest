@@ -2,6 +2,8 @@
 
 FROM alpine:3.16
 RUN apk add curl
+ARG TARGETOS
+ARG TARGETARCH
 
 #Set Relative Working Directory
 WORKDIR /app
