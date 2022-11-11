@@ -47,7 +47,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            workrs
+            ghcr.io/jacopopsen/watchtowersetuptest:main
           # Docker tags based on the following events/attributes
           tags: |
             type=schedule
