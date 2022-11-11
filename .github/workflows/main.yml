@@ -2,8 +2,6 @@ name: armwork
 
 # Controls when the workflow will run
 on:
-  schedule:
-    - cron: '5 * * * *'
   push:
     branches: [ main, development ]
   #pull_request:
