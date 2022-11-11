@@ -2,17 +2,13 @@ name: armwork
 
 # Controls when the workflow will run
 on:
-  workflow_dispatch
+  schedule:
+    - cron: '5 * * * *'
   push:
-    branches:
-      - 'main'
-      - 'dev'
-    tags:
-      - 'v*.*.*'
-  pull_request:
-    branches:
-      - 'main'
-      - 'dev'
+    branches: [ main, development ]
+  #pull_request:
+  #  branches: [ main, development ]
+  workflow_dispatch:
 
 # permissions are needed if pushing to ghcr.io
 permissions: 
